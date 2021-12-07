@@ -1,0 +1,10 @@
+server.port: 8081
+
+cassandra:
+  user: cassandra
+  password: cassandra
+  contact-point: localhost
+cache:
+  maxCache: 15000
+  cachePolicy: LRU
+  ttlSecond: 86400

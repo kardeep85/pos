@@ -1,0 +1,34 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.0'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-cassandra'
+    implementation 'com.datastax.cassandra:cassandra-driver-core:3.6.0'
+
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    implementation 'net.sf.ehcache:ehcache'
+
+
+    implementation 'commons-codec:commons-codec:1.15'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
