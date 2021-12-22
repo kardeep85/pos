@@ -8,3 +8,8 @@ cache:
   maxCache: 15000
   cachePolicy: LRU
   ttlSecond: 86400
+
+management:
+  endpoint:
+    health:
+      enabled: true
